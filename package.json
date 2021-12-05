@@ -1,0 +1,24 @@
+{
+  "name": "TypeScript",
+  "version": "1.0.0",
+  "description": "TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lusaiwen/TypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lusaiwen/TypeScript/issues"
+  },
+  "homepage": "https://github.com/Lusaiwen/TypeScript#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.11"
+  }
+}
