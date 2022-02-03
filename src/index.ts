@@ -1,6 +1,7 @@
-import getTime, { sum, a } from './myModule';
+//poker
+import { createDeck, printDeck } from "./func";
 
-console.log(sum(1, 2));
-console.log(a);
 
-console.log(getTime());
+
+const deck = createDeck();
+printDeck(deck);
