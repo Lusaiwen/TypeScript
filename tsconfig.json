@@ -4,7 +4,9 @@
         "module": "CommonJS", //配置编译目标代码的模块标准
         "lib": ["ES2016"],  //配置编译目标代码的环境
         "outDir": "./dist", //输出目录
-        "strictNullChecks": true //是否使用更加严格的类型检查
+        "strictNullChecks": true, //是否使用更加严格的类型检查
+        "noImplicitUseStrict": true,
+        "moduleResolution": "Node"
     },
     "include": ["./src"]  //监听文件的更改
 }
