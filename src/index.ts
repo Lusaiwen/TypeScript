@@ -1,4 +1,3 @@
+let say: string = "hello";
 
-let say:string = 'hello';
-
-console.log('fsdfgdsgf');
+console.log("fsdfgdsgf");
