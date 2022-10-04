@@ -84,14 +84,5 @@ function sum(a:number , b:number , c?:number){
         return a + b;
     }
 }
-//默认值   
-function sum1(a:number , b:number , c:number = 0){
-    if(c){
-        return a + b +c ;
-    }else {
-        return a + b;
-    }
-}
-sum1(1,2);//当不传第三个值时，c表示可选参数
 
 

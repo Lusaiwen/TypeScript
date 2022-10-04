@@ -1,4 +1,8 @@
-function sum1(a: number, b: number): number {
-  return a + b;
+function isOdd(num: number): boolean {
+  return true;
 }
-let total: number = sum1(1, 2);
+
+let array1: number[];
+
+let array2: Array<number>;
+
