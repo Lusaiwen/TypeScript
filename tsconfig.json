@@ -6,7 +6,8 @@
         "outDir": "./dist", //输出目录
         "strictNullChecks": true, //是否使用更加严格的类型检查
         "noImplicitUseStrict": true,
-        "moduleResolution": "Node"
+        "moduleResolution": "Node",
+        "esModuleInterop": true
     },
     "include": ["./src"]  //监听文件的更改
 }
