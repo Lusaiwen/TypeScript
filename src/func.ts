@@ -1,28 +1,44 @@
-import { Mark, Color } from './enums';
-import { Deck } from './types';
+import { Mark, Color } from "./enums";
+import { Deck, Card, Joker } from "./types";
 
 export function createDeck(): Deck {
-    let deck: Deck = [];
-    const marks = Object.values(Mark);
-    const colors = Object.values(Color);
-    for (const m of marks) {
-        for (const c of colors) {
-            deck.push({
-                mark: m,
-                color: c
-            });
-        }
+  let deck: Deck = [];
+  const marks = Object.values(Mark);
+  const colors = Object.values(Color);
+  for (const m of marks) {
+    for (const c of colors) {
+      deck.push({
+        mark: m,
+        color: c,
+        getString() {
+          return this.mark + this.color;
+        },
+      } as Card);
     }
-    return deck;
+  }
+  const joker: Joker = {
+    type: "small",
+    getString() {
+      return "joker";
+    },
+  };
+  deck.push(joker);
+  const Joker: Joker = {
+    type: "big",
+    getString() {
+      return "joker";
+    },
+  };
+  deck.push(Joker);
+  return deck;
 }
-export  function printDeck(deck: Deck) {
-    let result = '\n';
-    deck.forEach((card, i) => {
-        let str = card.color + card.mark;
-        result += str + '\t';
-        if ((i + 1) % 4 === 0) {
-            result += '\n';
-        }
-    });
-    console.log(result);
+export function printDeck(deck: Deck) {
+  let result = "\n";
+  deck.forEach((card, i) => {
+    result += card.getString() + "\t";
+    if ((i + 1) % 6 === 0) {
+      result += "\n";
+    }
+  });
+  console.log(result);
 }

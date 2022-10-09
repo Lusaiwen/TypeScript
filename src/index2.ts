@@ -1,10 +1,3 @@
-enum Gender {
-    male = '男',
-    female = '女'
-}
-let gender: Gender;
+let arr: readonly number[] = [1, 2, 3];
 
-gender = Gender.male;
-gender = Gender.female;
-
-function searchUser(g: Gender) {}
+arr = [2, 3, 4];
